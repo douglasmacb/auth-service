@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class ValidTokenDto {
-	private String token;
-	private boolean valid;	
+public class ResponseErrorDto {
+	private String error;
+	private int httpStatusCode;
 }

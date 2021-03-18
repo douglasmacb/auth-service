@@ -24,7 +24,7 @@ public class TokenService {
 
 		Usuario logado = (Usuario) authentication.getPrincipal();
 		Date hoje = new Date();
-		
+
 		return Jwts.builder()
 				.setIssuer("AuthService")
 				.setSubject(logado.getId().toString())

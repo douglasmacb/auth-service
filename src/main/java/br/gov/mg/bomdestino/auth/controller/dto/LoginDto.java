@@ -1,5 +1,7 @@
 package br.gov.mg.bomdestino.auth.controller.dto;
 
+import java.util.List;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -7,7 +9,9 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class ValidTokenDto {
+public class LoginDto {
 	private String token;
-	private boolean valid;	
+	private String tipo;
+	private List<String> roles;
+	private String email;
 }
